@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 25px -17px #232222;
+  position: fixed;
+}
+
+.header-content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-content .logo {
+  color: #232222;
+  font-size: 24px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  float: left;
+}
+
+.logo b {
+  font-size: 17.5px;
+  color: #777;
+}
+
+.header-content ul {
+  float: right;
+  display: flex;
+}
+
+.header-content ul li {
+  line-height: 80px;
+  list-style: none;
+}
+
+.header-content ul li .active {
+  color: #A9A5AA;
+}
+
+.header-content ul li a {
+  color: #232222;
+  font-size: 19px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.header-content ul li a:hover {
+  color: #A9A5AA;
+  transition: all .8s ease;
+  transform: translateY(-15px);
+}
+
+.header-content ul .icons {
+  display: none;
+}
+
+/*Contenido de los codigos*/
+
+.codes-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.codes {
+  width: 35%;
+  height: 455px;
+  background: #fff;
+  box-shadow: 0 0 20px;
+  border-radius: 12px 12px 8px 8px;
+  margin: 0 20px;
+  transition: all .6s ease;
+}
+
+.codes:hover {
+  transform: translateY(-25px);
+}
+
+.codes-content .codes img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px 12px 0 0;
+}
+
+.codes h4 {
+  text-align: center;
+  color: #232222;
+}
+
+.codes p {
+  text-align: center;
+  color: #838183;
+}
+
+.codes .a {
+  font-size: 19px;
+}
+
+.codes .href {
+  margin: 0 55px;
+}
+
+.codes .href a:hover {
+  box-shadow: 0 0 15px #232222;
+  transition: all .5s ease;
+}
+
+.codes a {
+  font-size: 15px;
+  line-height: 60px;
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.codes .down {
+  background: #46a2fd;
+}
+
+.codes .yt {
+  background: #bb0000;
+}
+
+.label-btn {
+  float: right;
+  margin: 0 300px;
+  z-index: 100;
+  display: none;
+}
+
+.label-btn #line1, #line2 {
+  width: 27px;
+  height: 3px;
+  background: #232222;
+  border-radius: 10px;
+  transition: all .4s ease;
+  position: absolute;
+}
+
+.label-btn #line1 {
+  top: 43px;
+  height: 2.5px;
+}
+
+.label-btn #line2 {
+  top: 33px;
+}
+
+#btn:checked ~ .label-btn #line1 {
+  transform: rotate(-43.5deg);
+  top: 40px;
+  height: 3px;
+}
+
+#btn:checked ~ .label-btn #line2 {
+  transform: rotate(43.5deg);
+  top: 40px;
+}
+
+#btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .label-btn {
+    display: block;
+    position: absolute;
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .header-content .logo {
+    position: absolute;
+    font-size: 20px;
+    z-index: 100;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .logo b {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .header-content ul {
+    width: 100%;
+    height: 100vh;
+    background: #232222;
+    padding: 190px 0;
+    top: -200%;
+    left: 0;
+    transition: all .7s ease;
+    display: inline;
+    position: fixed;
+  }
+  
+  .header-content ul li .active {
+    color: #46a2fd;
+  }
+  
+  .header-content ul li a {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .header-content ul li a:hover {
+    color: #46a2fd;
+  }
+  
+  .header-content ul .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    font-size: 25px;
+  }
+  
+  .header-content ul .icons a {
+    color: #fff;
+    margin: 0 10px;
+    transition: all 1s ease;
+  }
+  
+  .header-content ul .icons .yt {
+    padding: 14px 19px;
+    border-radius: 100%;
+  }
+  
+  .header-content ul .icons .twi {
+    padding: 14px 20.5px;
+    border-radius: 100%;
+  }
+  
+  .header-content ul .icons .tik {
+    padding: 14px 22px;
+    border-radius: 100%;
+  }
+  
+  .header-content ul .icons .yt:hover {
+    background: #bb0000;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .header-content ul .icons .twi:hover {
+    background: #00aced;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .header-content ul .icons .tik:hover{
+    background: #122222;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .header-content ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .codes-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+   .codes {
+    width: 82%;
+    margin: 40px 37px;
+  }
+  
+  #btn:checked ~ ul {
+    top: 0;
+  }
+  
+  #btn:checked ~ .logo {
+    color: #fff;
+    transition: all .5s ease;
+  }
+  
+  #btn:checked ~ .label-btn #line1 {
+    background: #fff;
+  }
+  
+  #btn:checked ~ .label-btn #line2 {
+    background: #fff;
+    transition: all .5s ease;
+  }
+}
